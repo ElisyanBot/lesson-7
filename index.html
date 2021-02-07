@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--fonts-->
+        <!--roboto-->
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!--stylesheets-->
+        <link rel="stylesheet" href="style/index.css">
+    <title>lektion 7
+    </title>
+</head>
+<body>
+    <section class="mainFormCard">
+        <article class="mainFormCard-fitnessInformation">
+             <!-- orignal text: Sign up! for our fitness program -->
+                <h2 class="fitnessInfromation-heading">
+                    S<span>IGN UP</span>! FOR 
+                    <span class="fitnessInfromation-heading_darkText">OUR</span>
+                </h2>
+                <h2 class="fitnessInfromation-heading secondRow_heading">
+                    FITNESS <span class="fitnessInfromation-heading_darkText">PROGRAM</span>
+                </h2>
+                    <!--paragraphs-->
+                    <p class="fitnessInfromation-paragraph_darkText">
+                        Lorem ipsum dolor <br>
+                        sit amet, elit<br>  
+                        consectetur scing. <br>
+                        Phasellus nisl ante,
+                        euismod.
+                    </p>
+                    <p class="fitnessInfromation-paragraph_darkText">
+                        Lorem ipsum dolor <br> 
+                        sit amet, consecte <br> 
+                        tur adipiscing elit.<br>
+                        Phasellus nisl
+                    </p>
+                    <p class="fitnessInfromation-paragraph_whiteText"> 
+                        W<span class="paragraph_smallerText">ELCOME</span>!
+                    </p>
+        </article>
+        
+            <div class="formContainer">
+                <form  action="" method="post" class="signUpApplicationForm"> 
+                    <!-- full name -->
+                    <label for="FullName" class="fullNameLabel" >
+                        Full Name
+                    </label>
+                        <input  type="text" name="fullName" id="FullName" 
+                                placeholder="Enter your Full Name">
+                    <!-- Email -->
+                    <label for="Email" class="emailLabel">
+                        Your E-mail
+                    </label>
+                        <input type="email" name="email" id="Email" 
+                               placeholder="Enter your E-mail adress">
+                    <!-- textaera-->
+                    <label for="Message">What are your goals with fitness?</label>
+                        <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
+                    <!--checbox-->
+                    <div class="fromCeckboxContainer"> 
+                        <!-- newsletter -->
+                        <input type="checkbox" value="agrees to news letter"
+                               id="NewsLetterCheckbox" checked>
+                        <label for="NewsLetterCheckbox" class="labelCheckbox">
+                               Get your weekly newsletter!</label> 
+                        <br>
+                        <!--agreed to ToS-->
+                        <input type="checkbox" value="agrees to ToS" id="TermCheckbox">
+                        <label for="TermCheckbox" class="labelCheckbox"> 
+                               Agree to our Terms of Service!</label>
+                    </div>
+                    <!--button-->
+                    <button class="formButton" type="submit" >
+                        Sign Up!
+                    </button>
+                </form>
+          </div>
+          
+          <div class="mainFormCard-styling"></div>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,232 @@
+/*style reset*/
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+
+    font-family: 'Roboto', sans-serif;
+    /*changes alla font-familys to roboto*/
+}
+
+html{
+    font-size: 62.5%;
+    /*1 rem = 10px*/ 
+}
+
+body{
+    background-color: #E5E5E5;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+    .mainFormCard{
+        background-color: #ff5252;
+        border-radius: 1rem;
+        width: 135rem;
+        height: 80rem;
+
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+    }
+    /*article*/
+        .mainFormCard-fitnessInformation{
+            width: 60rem;
+            height: 62.5rem;
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+        }
+            /*heading*/
+            .fitnessInfromation-heading{
+                font-weight: 700;
+                font-size: 3.6rem;
+                color: white;
+            }
+
+                .fitnessInfromation-heading_darkText{
+                    color: #741515;
+                }
+
+                .secondRow_heading{
+                    transform: translateX(9rem);
+                    margin-bottom: 2rem;
+                }
+            
+            /*paragraph*/
+            .fitnessInfromation-paragraph_darkText{
+                font-weight: 400;
+                font-size: 2.4rem;
+                color: #550014;
+
+                padding-top: 1rem;
+                margin-left: 4rem;
+                letter-spacing: 0.2rem;
+                width: 32.2rem;
+            }
+
+            .fitnessInfromation-paragraph_whiteText{
+                font-weight: bold;
+                font-size: 3.2rem;
+                color: white;
+
+                padding-top: 3rem;
+                margin-left: 4rem;
+                align-self: baseline;
+            }
+                .paragraph_smallerText{
+                    font-size: 2.9rem;
+                }
+
+        /*form*/  
+        .formContainer{
+            background-color: #ffffff;
+            border-radius: 1rem;
+            width: 47rem;
+            height: 55rem;
+
+            position:relative;
+            right: 4rem;
+            z-index: 1;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+            .signUpApplicationForm{
+                width: 80%;
+                height: 90%;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            } 
+                .signUpApplicationForm label{
+                    
+                    font-weight: 400;
+                    font-size: 1.5rem;
+                }
+
+                    /*inputs, textaera*/
+                    #FullName,
+                    #Email{
+                        margin: 0 0 2rem 0;
+                        min-height: 3rem;
+                        border: none;
+                        border-bottom: 1px solid  #3dafe0;
+                    }
+
+                    #Message{
+                        resize: none;
+                        margin: 0 0 1rem  0;
+
+                        border: none;
+                        border-bottom: 1px solid  #3dafe0;
+                        border-top: 1px solid  #3dafe0;
+                        border-radius: 10px;
+
+                        
+                    }
+                        /*all input type="text+texteara" foucs/hover*/
+                        #FullName:focus,
+                        #Email:focus,
+                        #Message:focus{
+                            outline: none;
+                            border:1px solid red;     
+                        }
+
+                        #FullName:hover,
+                        #Email:hover,
+                        #Message:hover{
+                            background-color: rgba(238, 238, 238, 0.671);
+                        }
+
+                /*chechbox*/
+                    /*hide orignal checkbox "icon"*/
+                    .fromCeckboxContainer input[type="checkbox"]{
+                       margin: 1rem 0;
+
+                       opacity: 0;
+                       transform: translateX(1.5rem);
+                    }
+
+                       /*adds new conent before the label when input is checked*/
+                       .fromCeckboxContainer input[type="checkbox"] + label::before{
+                            content: "\2714"; /*checked checkbox logo from utf-8*/
+                            color: white;
+
+                            background-color: #3dafe0;
+                            padding: 2px;
+
+                            border: none;
+                            border-radius: 3px;
+                        }
+
+                            /*edits the last scope*/
+                            .fromCeckboxContainer input[type="checkbox"]:not(:checked) + 
+                            label::before{
+                                content: "\2714";
+                                color:rgba(255, 255, 255, 0); /*hides the utf-8 logo*/
+
+                                border: none;
+                            }
+                                /*hover effects on labels and boxes*/
+                                #NewsLetterCheckbox:hover,
+                                #TermCheckbox:hover,
+                                .labelCheckbox:hover{
+                                    cursor: pointer;
+                                    background-color: rgba(238, 238, 238, 0.671);
+                                }
+
+                                
+
+                /*button for Form*/
+                .formButton{
+                    background-color: #3dafe0;
+                    width: 20rem;
+                    padding: 1.5rem 0rem;
+                    margin: 3rem 0 0 0;
+                    
+                    font-weight: bold;
+                    font-size: 1.8rem;
+                    color: white;
+
+                    border: none;
+                    border-radius: 1rem;
+
+                    align-self: center;
+                    
+                }
+                    .formButton:hover{
+                        background-color: #1c87b4;
+                        cursor: pointer;
+                    }
+
+                        .formButton:disabled{
+                            background-color: #56727e;
+                            cursor: no-drop;
+                        }
+
+    /*styling*/
+   .mainFormCard-styling{
+        background-image: url(../img/Rectangle\ 6.svg);
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 86.4rem;
+
+        border-radius: 1rem;
+
+        position: absolute;
+        right: 0;
+        z-index: 0;
+        opacity: 0.7;
+    } 
